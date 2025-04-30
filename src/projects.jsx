@@ -1,4 +1,5 @@
 import bcIMG from './images/bc-cafe.jpg'
+import stdReg from './images/studentRegApp.jpg'
 
 
 function Projects(){
@@ -10,14 +11,13 @@ function Projects(){
                 <a className='txt' href='https://github.com/Mogase/BC_Cafeteria' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
                 </div>
             <div className="pb">2
+                <img className='projimg' src={stdReg} alt="" />
+                <p> This project focuses on software testing for a Windows-based student management application developed by BelgiumCampusPRG282 Software Dev. The system captures and manages student and module data, with all records stored in an SQL Server database using a multi-layered architecture.</p>
+
+                <a className='txt' href='https://github.com/Clayton1773/StudentRegisterApp' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
+
+            </div>
            
-            </div>
-            <div className="pb">3
-            
-            </div>
-            <div className="pb">4
-            
-            </div>
         </div>
     )
 }
