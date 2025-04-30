@@ -1,16 +1,17 @@
 import bcIMG from './images/bc-cafe.jpg'
-import stdReg from './images/studentRegApp.jpg'
+import stdReg from './images/student.jpg'
+
 
 
 function Projects(){
     return(
         <div className="projects">
-            <div className="pb">1
+            <div className="pb">
                 <img className='projimg' src={bcIMG} alt="" />
                 <p> This C# console application helps Belgium Campus Cafeteria determine whether students qualify for a high-performing student discount. The application captures student details such as name, residence status, years on campus, monthly allowance, and average marks, then evaluates if they meet the criteria for a discount.</p>
                 <a className='txt' href='https://github.com/Mogase/BC_Cafeteria' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
                 </div>
-            <div className="pb">2
+            <div className="pb">
                 <img className='projimg' src={stdReg} alt="" />
                 <p> This project focuses on software testing for a Windows-based student management application developed by BelgiumCampusPRG282 Software Dev. The system captures and manages student and module data, with all records stored in an SQL Server database using a multi-layered architecture.</p>
 
