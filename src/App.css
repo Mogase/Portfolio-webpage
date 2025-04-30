@@ -1,46 +1,30 @@
+
 html, body, #root {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scroll */
   background-color: hsl(215, 16%, 47%);
 }
-
-.container {
+  .container {
   background-color: hsl(222, 47%, 11%);
   display: flex;
   flex-direction: column;
-}
-
-/* Header/Navbar */
-.header {
+  }
+.header{
   height: 80px;
   display: flex;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: space-between;
   padding: 10px;
   color: white;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
-
-h1 {
+h1{
   margin: 2em;
 }
-
-.objects {
+.objects{
   display: flex;
   gap: 2em;
-  flex-wrap: wrap;
 }
-
-button {
-  background-color: transparent;
-  color: white;
-  border: none;
-  font-size: larger;
-  cursor: pointer;
-}
-
-/* Home Section */
 .home {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -49,7 +33,6 @@ button {
   align-items: center;
   color: white;
 }
-
 .h-right {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -59,71 +42,62 @@ button {
   background-color: hsl(215, 16%, 47%);
   padding: 10px;
 }
-
-.image1 {
-  width: 250px;
+.image1{
+  width: 250px; 
   height: 250px;
   border-radius: 50% 10%;
   margin-left: 50px;
 }
-
-h5 {
+h5{
   margin-left: 115px;
 }
-
-.cvimg {
-  width: 100px;
+.cvimg{
+  width: 100px; 
   height: 100px;
   border-radius: 12px;
-  margin-left: 100px;
+  margin-left:  100px;
 }
-
-/* About Section */
-.about {
+button{
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: larger;
+}
+.about{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 50px;
   justify-content: center;
   align-items: center;
   color: white;
-}
-
-h2 {
+ }
+h2{
   text-align: center;
 }
-
-.image2 {
-  width: 250px;
+.image2{
+  width: 250px; 
   height: 250px;
   border-radius: 50% 10%;
   margin-left: 50px;
 }
-
-.A-right {
-  background-color: hsl(215, 16%, 47%);
-  padding: 10px;
+.A-right{
+ background-color: hsl(215, 16%, 47%);
+ padding: 10px;
 }
-
-/* Soft Skills Section */
-.ss {
+.ss{
   text-align: center;
   color: white;
 }
-
 .skills {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align skill bars to the left */
   color: white;
   margin: 5em;
 }
-
 .skill-item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
 }
-
 .bar-fill {
   height: 20px;
   width: 100%;
@@ -132,7 +106,6 @@ h2 {
   position: relative;
   overflow: hidden;
 }
-
 .bar-fill::before {
   content: '';
   position: absolute;
@@ -142,124 +115,119 @@ h2 {
   background-color: hsl(215, 16%, 47%);
   transition: width 0.3s ease;
 }
-
 .fill-90::before { width: 90%; }
 .fill-80::before { width: 80%; }
 .fill-85::before { width: 85%; }
 .fill-75::before { width: 75%; }
 .fill-70::before { width: 70%; }
 .fill-65::before { width: 65%; }
-
-/* IT Skillset Section */
-.skillset {
-  display: grid;
-  justify-content: center;
-}
-
-.skillset h3 {
+.skillset h3{
   color: white;
   text-align: center;
 }
-
-.skillset1,
-.skillset2 {
+.skillset{
+ display: grid;
+  justify-content: center;
+}
+.skillset1{
   display: flex;
   gap: 50px;
   margin-top: 40px;
-  transition: all 0.5s ease;
-  justify-content: center;
 }
-
-.sk {
-  width: 250px;
+.skillset2{
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+  transition: all 0.5s ease;
+}
+.sk{
+  width: 250px; 
   height: 250px;
   border-radius: 10%;
   margin: 10px;
+  
 }
-
-.lang {
+.lang{
   transition: all 0.5s ease;
 }
-
-.lang:hover {
-  background-color: hsl(215, 16%, 47%);
+.lang:hover{
+  background-color: hsl(215, 16%, 47%); 
   color: #000;
 }
-
-/* Projects Section */
-.projects {
+.projects{
   text-align: center;
   color: white;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 300px;
   background-color: hsl(215, 16%, 47%);
   margin: 90px;
   gap: 10px;
   padding: 20px;
   border-radius: 20px;
+ 
 }
-
-.pb {
-  border: 2px solid white;
+.pb{
+  border: 2px solid white; 
   border-radius: 10px;
   padding: 1em;
   background-color: hsl(215, 28%, 15%);
-  transition: all 0.5s ease;
+  transition: all 0.5s ease; 
+  
 }
-
-.pb:hover {
-  background-color: hsl(215, 16%, 47%);
+.pb:hover{
+  background-color: hsl(215, 16%, 47%); 
   color: #000;
 }
 
-/* Footer/Contact Section */
-.footer h2 {
+.projimg{
+  width: 250px; 
+  height: 250px;
+}
+
+.footer h2{
   color: white;
-  text-align: center;
+  
 }
-
-.links {
+.links{
   margin: 100px;
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  align-items: center;
 }
-
-.links1,
-.links2 {
-  display: flex;
-  gap: 2em;
+.links1{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  
 }
-
-.linkicon {
-  width: 50px;
+.links2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.linkicon{
+  width: 50px; 
   height: 50px;
   border-radius: 10%;
   margin: 25px;
+
 }
 
-.linktxt {
+.linktxt{
   display: flex;
   align-items: center;
   gap: 8px;
   color: white;
+  
+  
 }
-
-.txt {
+.txt{
   text-decoration: none;
   transition: all 0.3s ease;
   color: white;
   font-size: larger;
+  
 }
-
-.txt:hover {
-  background-color: hsl(215, 16%, 47%);
+.txt:hover{
+  background-color: hsl(215, 16%, 47%); 
   color: #000;
 }
 
-/* Scroll Up Button */
 .scrlup {
   position: fixed;
   bottom: 20px;
@@ -269,51 +237,4 @@ h2 {
   color: white;
   border: none;
   font-size: 1rem;
-  cursor: pointer;
-}
-
-/* Responsive Design - Media Queries */
-@media screen and (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    height: auto;
-    align-items: center;
-    padding: 20px;
-  }
-
-  .objects {
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-  }
-
-  .home,
-  .about {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .h-right,
-  .A-right {
-    grid-template-columns: 1fr;
-    gap: 1em;
-    margin-top: 20px;
-  }
-
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
-    margin: 30px;
-  }
-
-  .skillset1,
-  .skillset2 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .links1,
-  .links2 {
-    flex-direction: column;
-    align-items: center;
-  }
 }
