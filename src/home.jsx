@@ -7,10 +7,10 @@ function Home(){
             <div className='h-right'>
                 <p>Hi, I’m Mogase Nkadimeng
                 and welcome to my portfolio webpage where you will learn more about me and my experties.</p>
-                <div>
-                    <h5>click below</h5>
+                <div className="cv-section">
+                    <span className="click-below">Click below</span>
                     <a href="/Mogase_Nkadimeng_CV.pdf" download>
-                    <img className='cvimg' src={cv} alt="download cv" />
+                        <img className='cvimg' src={cv} alt="CV" />
                     </a>
                 </div>
             </div>
