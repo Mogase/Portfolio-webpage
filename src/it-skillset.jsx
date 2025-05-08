@@ -18,6 +18,8 @@ function Skillset(){
             <div className='lang'><img className='sk' src={c} alt="" /></div>
             <div className='lang'><img className='sk' src={java} alt="" /></div>
             </div>
+
+            
         </div>
     )
 }
