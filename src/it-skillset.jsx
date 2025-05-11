@@ -4,6 +4,8 @@ import js from './images/js.jpg'
 import react from './images/react.jpg'
 import c from './images/c.jpg'
 import java from './images/java.jpg'
+import "./it-skillset.css"
+
 function Skillset(){
     return(
         <div className='skillset'>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-scroll';
+import "./header.css"
 
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -18,9 +19,9 @@ function Header() {
             </button>
             <div className={`objects ${menuOpen ? "show" : ""}`}>
                 <Link to="home" smooth={true} duration={500} onClick={() => setMenuOpen(false)}><button>Home</button></Link>
-                <Link to="about" smooth={true} duration={500} onClick={() => setMenuOpen(false)}><button>About</button></Link>
+                <Link to="about-me" smooth={true} duration={500} onClick={() => setMenuOpen(false)}><button>About</button></Link>
                 <Link to="skills" smooth={true} duration={500} onClick={() => setMenuOpen(false)}><button>Skills</button></Link>
-                <Link to="projects" smooth={true} duration={500} onClick={() => setMenuOpen(false)}><button>Projects</button></Link>
+                <Link to="PROJ" smooth={true} duration={500} onClick={() => setMenuOpen(false)}><button>Projects</button></Link>
                 <Link to="footer" smooth={true} duration={500} onClick={() => setMenuOpen(false)}><button>Contact</button></Link>
             </div>
         </div>

@@ -1,0 +1,44 @@
+
+.footer h2{
+  color: white;
+  
+}
+.links{
+  margin: 100px;
+}
+.links1{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  
+}
+.links2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.linkicon{
+  width: 50px; 
+  height: 50px;
+  border-radius: 10%;
+  margin: 25px;
+
+}
+
+.linktxt{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  
+  
+}
+.txt{
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: larger;
+  
+}
+.txt:hover{
+  background-color: hsl(215, 16%, 47%); 
+  color: #000;
+}

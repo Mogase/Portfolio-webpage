@@ -1,0 +1,16 @@
+.header{
+  height: 80px;
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: white;
+}
+h1{
+  margin: 2em;
+}
+.objects{
+  display: flex;
+  gap: 2em;
+}

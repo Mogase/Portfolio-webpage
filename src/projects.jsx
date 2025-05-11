@@ -1,13 +1,13 @@
 import bcIMG from './images/bc-cafe.jpg'
 import stdReg from './images/student.jpg'
-
+import "./projects.css"
 
 
 function Projects(){
     return(
-        
-        <div className="projects">
-           
+        <div>
+            <h1 className="PROJ">Projects</h1>
+             <div className="projects">
             <div className="pb">
                 <img className='projimg' src={bcIMG} alt="" />
                 <p> This C# console application helps Belgium Campus Cafeteria determine whether students qualify for a high-performing student discount. The application captures student details such as name, residence status, years on campus, monthly allowance, and average marks, then evaluates if they meet the criteria for a discount.</p>
@@ -22,6 +22,9 @@ function Projects(){
             </div>
            
         </div>
+
+        </div>
+       
     )
 }
 export default Projects

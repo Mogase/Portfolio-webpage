@@ -1,5 +1,7 @@
 import Image1 from './images/IMG_00542.jpg'
 import cv from './images/cv.jpeg'
+import "./home.css" 
+
 function Home(){
     return(
         <div  className="home">

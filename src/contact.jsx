@@ -2,6 +2,7 @@ import linkedin from './images/linkedin.jpg'
 import cellphone from './images/call.jpg'
 import email from './images/email.jpg'
 import github from './images/git.jpg'
+import "./contact.css"
 function Contact(){
     return(
         <div className="footer">
@@ -28,7 +29,7 @@ function Contact(){
                     </div>
                     <div className='linktxt'>
                         <img className='linkicon' src={email} alt="" />
-                        <p className='txt'>mogasenkadmeng@icloud.com</p>
+                        <p className='txt'>mogasenkadmeng11@gmail.com</p>
                     </div>
                 </div>
             </div>
