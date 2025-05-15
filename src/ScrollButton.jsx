@@ -9,7 +9,7 @@ function ScrollButton() {
       const scrollPosition = window.scrollY + window.innerHeight; 
       const documentHeight = document.documentElement.scrollHeight;
 
-      // Log positions for debugging
+      
       console.log('Scroll Position:', scrollPosition);
       console.log('Document Height:', documentHeight);
 
