@@ -4,17 +4,36 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: hsl(215, 16%, 47%);
-  margin: 90px;
-  gap: 10px;
-  padding: 20px;
+  margin: 40px auto;
+  gap: 20px;
+  padding: 25px;
   border-radius: 20px;
+  max-width: 1200px;
+}
+
+@media (max-width: 1024px) {
+  .projects {
+    margin: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr;
+    margin: 20px;
+    padding: 15px;
+  }
 }
 .pb{
   border: 2px solid white; 
   border-radius: 10px;
-  padding: 1em;
+  padding: 1.5em;
   background-color: hsl(215, 28%, 15%);
-  transition: all 0.5s ease; 
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
 .pb:hover{
   background-color: hsl(215, 16%, 47%); 
@@ -24,9 +43,47 @@
 .projimg{
   width: 250px; 
   height: 250px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.pb p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+  .projimg {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .pb {
+    padding: 1em;
+  }
+  
+  .pb p {
+    font-size: 0.9em;
+  }
 }
 
 .PROJ{
   text-align: center;
   color: white;
+  margin: 40px 0 20px;
+  font-size: 2em;
+}
+
+@media (max-width: 768px) {
+  .PROJ {
+    margin: 30px 0 10px;
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .PROJ {
+    font-size: 1.5em;
+  }
 }

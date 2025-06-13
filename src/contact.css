@@ -1,42 +1,81 @@
 
+.footer {
+  padding: 20px;
+  width: 100%;
+}
+
 .footer h2{
   color: white;
-  
+  text-align: center;
+  margin-bottom: 30px;
 }
+
 .links{
-  margin: 100px;
+  margin: 40px auto;
+  max-width: 800px;
 }
+
 .links1{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  
+  margin-bottom: 20px;
 }
+
 .links2{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 768px) {
+  .links {
+    margin: 20px;
+  }
+  
+  .links1, .links2 {
+    grid-template-columns: 1fr;
+  }
 }
 .linkicon{
   width: 50px; 
   height: 50px;
   border-radius: 10%;
-  margin: 25px;
-
+  margin: 15px;
+  flex-shrink: 0;
 }
 
 .linktxt{
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
   color: white;
-  
-  
+  padding: 5px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
+
+.linktxt:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .txt{
   text-decoration: none;
   transition: all 0.3s ease;
   color: white;
   font-size: larger;
+  word-break: break-word;
+  max-width: 100%;
+}
+
+@media (max-width: 480px) {
+  .linkicon {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
   
+  .txt {
+    font-size: medium;
+  }
 }
 .txt:hover{
   background-color: hsl(215, 16%, 47%); 

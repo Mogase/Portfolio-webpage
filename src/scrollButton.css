@@ -3,8 +3,39 @@
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
   font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 100;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.scrlup:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: translateX(-50%) translateY(-5px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .scrlup {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .scrlup {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+    bottom: 15px;
+  }
 }

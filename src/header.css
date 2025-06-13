@@ -1,16 +1,54 @@
 .header{
   height: 80px;
   display: flex;
-  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 20px;
   color: white;
+  width: 100%;
+  position: relative;
 }
+
 h1{
   margin: 2em;
 }
+
 .objects{
-  display: flex;
   gap: 2em;
+}
+
+@media (min-width: 769px) {
+  .objects {
+    display: flex;
+  }
+}
+
+.objects button {
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.objects button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+  
+  h1 {
+    margin: 1em;
+  }
+  
+  .objects {
+    padding: 15px 0;
+  }
+  
+  .objects button {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
 }

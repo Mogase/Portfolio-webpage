@@ -1,23 +1,90 @@
 .skillset{
- display: grid;
+  display: grid;
   justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+.skillset h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8em;
+}
+
 .skillset1{
   display: flex;
   gap: 50px;
   margin-top: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
 .skillset2{
   display: flex;
   gap: 50px;
   margin-top: 50px;
   transition: all 0.5s ease;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .skillset {
+    padding: 10px;
+  }
+  
+  .skillset h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .skillset1, .skillset2 {
+    gap: 30px;
+    margin-top: 20px;
+  }
 }
 .sk{
-  width: 250px; 
-  height: 250px;
+  width: 200px; 
+  height: 200px;
   border-radius: 10%;
   margin: 10px;
-  /*animation: pulse-glow 2s infinite ease-in-out;*/
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.sk:hover {
+  transform: scale(1.05);
+}
+
+.lang {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .sk {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sk {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sk {
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+  }
   
+  .skillset1, .skillset2 {
+    gap: 15px;
+  }
 }
