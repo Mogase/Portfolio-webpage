@@ -1,5 +1,6 @@
 import bcIMG from './images/bc-cafe.jpg'
 import stdReg from './images/student.jpg'
+import EMPS from './images/emps.jpg'
 import "./projects.css"
 
 
@@ -20,7 +21,21 @@ function Projects(){
                 <a className='txt' href='https://github.com/Clayton1773/StudentRegisterApp' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
 
             </div>
+
+            <div className="pb">
+                <img className='projimg' src={EMPS} alt="" />
+                <p> This is an Employee Management application built in react.js, it's purpose is to manage employee data</p>
+
+                <a className='txt' href='' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
+
+            </div>
            
+            <div className="pb">
+            <p>stay tuned for more projects</p>
+            </div>
+
+
+
         </div>
 
         </div>

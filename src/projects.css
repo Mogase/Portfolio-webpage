@@ -11,6 +11,8 @@
   max-width: 1200px;
 }
 
+
+
 @media (max-width: 1024px) {
   .projects {
     margin: 30px;
