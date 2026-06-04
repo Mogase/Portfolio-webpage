@@ -1,0 +1,52 @@
+.scrlup {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(135deg, rgb(16, 160, 204) 0%, hsl(215, 28%, 15%) 100%);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 15px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 1000;
+  animation: fadeIn 0.5s ease-in-out;
+  box-shadow: 0 10px 30px rgba(16, 160, 204, 0.4);
+}
+
+.scrlup:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(16, 160, 204, 0.6);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .scrlup {
+    font-size: 0.85rem;
+    padding: 12px 20px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .scrlup {
+    font-size: 0.8rem;
+    padding: 10px 18px;
+    bottom: 15px;
+    right: 15px;
+  }
+}

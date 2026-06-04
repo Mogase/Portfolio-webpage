@@ -1,0 +1,100 @@
+.header{
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  color: white;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(14, 25, 47, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 20px;
+    height: 80px;
+  }
+}
+
+h1{
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  background: linear-gradient(90deg, #fff 0%, rgb(16, 160, 204) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.2em;
+  }
+}
+
+.objects{
+  gap: 1.5em;
+}
+
+@media (min-width: 769px) {
+  .objects {
+    display: flex;
+  }
+}
+
+.objects button {
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  border-radius: 25px;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+.objects button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.objects button:hover::before {
+  left: 100%;
+}
+
+.objects button:hover {
+  background-color: hsl(215, 16%, 47%);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 15px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  .objects {
+    padding: 20px 0;
+    background: rgba(14, 25, 47, 0.98);
+    backdrop-filter: blur(20px);
+  }
+  
+  .objects button {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.1em;
+  }
+}
